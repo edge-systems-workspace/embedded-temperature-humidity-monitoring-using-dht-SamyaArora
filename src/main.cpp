@@ -93,3 +93,15 @@ void setup() {
     display.display();
     delay(2000);
 }
+/**
+ * @brief Main execution loop.
+ *
+ * @details
+ * - Waits 2 seconds (mandatory for DHT11 stability).
+ * - Reads temperature (°C) and humidity (%).
+ * - Validates sensor data.
+ * - Displays readings on OLED.
+ * - Displays error message if reading fails.
+ *
+ * @note DHT11 requires a minimum 2-second interval between reads.
+ */
